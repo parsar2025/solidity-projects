@@ -1,0 +1,17 @@
+{
+  "packageManager": "yarn@3.2.2",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ethers": "^5.7.0",
+    "fs": "^0.0.1-security",
+    "solc": "0.8.7-fixed"
+  },
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "hardhat": "^2.10.2",
+    "prettier": "^2.5.1"
+  }
+}
